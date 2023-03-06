@@ -1,0 +1,14 @@
+I installed VS code and worked on it. 
+I learned the short cuts to efficiently use VS code and its tools: 
+                      For windows Ctrl + B to toggle the sidebar menu.
+                      Ctrl + shift + D to debugging.
+                      Ctrl + shift + F to search and replace.
+Learned to create new file and to write code.
+Extensions that are use full in VS code:
+(prettier) -> for format on while saving.
+(cobalt 2) -> for theme.
+(advance new file) -> to create new file using command.
+(Live serve) -> for launch a development local server with live reload feature for static & dynamic pages.
+(Quokka) -> Gives JavaScript playground and TypeScript.
+(Bookmarks) -> for marking lines and jumping to them.
+Learned to Run and Debug. 
