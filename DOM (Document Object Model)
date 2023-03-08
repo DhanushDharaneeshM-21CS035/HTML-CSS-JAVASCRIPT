@@ -1,0 +1,19 @@
+DOM (Document Object Model):
+      -> Dom represents the content of an XML or HTML document as a tree structure.
+      -> Dom is a programming interface or an API.
+      -> Using Dom, we can easily read, access and update the content of the document.
+      -> Dom convert XML into a tree structure internally in the memory.
+     
+D => Document -> Files
+O => Object   -> Tag elements of the file
+M => Model    -> Layout or structure
+
+-> Document Object Model or Dom represents the content of XML or HTML documents as tree structure.
+-> It can be used to easily read, access and update the contents and is a programming interface or an API.
+-> It represents the document as a tree structure internally in the memory and can be used with programming languages like JavaScript
+-> Then by using the Dom functions like get elements by tag name, we can access the element.
+-> All XML elements can be accessed through the XML DOM
+-> Eg:
+      xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+-> This code retrieves the text value of the first <title> element in an XML document.
+-> DOM is an object-oriented representation of the web page, which can be modified with a scripting language such as JavaScript.
