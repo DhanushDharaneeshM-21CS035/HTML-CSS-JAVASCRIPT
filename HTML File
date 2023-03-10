@@ -81,4 +81,25 @@ Basic Tags:
                 
                 Navigation tag:
                 -> <nav></nav> -> it contains navigational items like navigational lists or navigational links
+               
+Links in HTML:
+          -> It help us to link our website to other website on the internet.
+          -> It can be also used to link to files like images or PDFs and we can create those links and then users can look at those images or PDFs.
+          ->Eg Tag:
+          -> <a href="link"></a> => Link navigates in the same tab 
+          -> <a href="link" target="_blank"></a> -> This basically tells the browser to open up this link in a new tab.
+          -> <a href="html file">   ->to open other html file present in same folder
+          -> <a href="directory">   ->to open html file present somewhere else
+          -> <a href="file">   ->open file in same folder
+          -> <img src="image link" alt="text if image is not present">   ->image from web
+          -> <img src="image file">   ->image in computer
+          -> <img width="100" height="100" src="image file">   ->to resize image
+          -> <video src="video file">   ->plays video without controls
+          -> <video src "video file" controls>   ->videos play with control
+          -> <iframe>   ->peek into otherwise
+
+To embed youtube video go to the video->share->embed:
+                        -> <ul>   ->unorderd list
+                        -> <li>   ->list
+                        -> <ol>   ->Ordered list
                 
