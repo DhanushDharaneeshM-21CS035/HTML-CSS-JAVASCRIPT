@@ -103,9 +103,52 @@ Videos in HTML:
           -> <video src "video file"poster="image file" controls></video> -> Adds thumbnail to the video or it adds a staring picture to the video
           -> <video src "video file"poster="image file" autoplay controls></video> -> Automatically start playing the video when we open the page
           -> <iframe></iframe>   ->peek into other website video from youtube
+          -> To embed youtube video go to the video->share->embed
 
-To embed youtube video go to the video->share->embed:
-                        -> <ul>   ->unorderd list
-                        -> <li>   ->list
-                        -> <ol>   ->Ordered list
-                
+LIst Types:
+          -> <ul></ul>   -> unorderd list 
+          -> <li></li>   -> list
+          -> <ol></ol>   -> Ordered list 
+          -> <dl>        -> description list
+                <dt>      : description term
+                    <dd></dd>  : describes the description
+                </dt>
+             </dl>     : ending of description list
+           
+Tables:
+      -> <table>    : Starting of table tag
+              <caption></caption>   :   Caption tag (Title of the table)
+                <tr>   :   Table row tag  (rows in table)
+                    <td></td>   :   Table data (Column name)(The individual data for each column in the table by using something called table of data)
+                </tr>  :   Table row tag ending
+         </table>   : Ending of table tag
+      -> instead of defining table data we also can define a table header
+      -> <th></th>  : Titles of each Columns
+      -> <thead></thead> : Table head part
+      -> <tbody><tbody> : Table body part
+      -> colspan="2"   :  The table data is giong to take up two columns in the table
+         Eg:
+           <td> colspan="2" </td> 
+      
+ Divs & Spans :
+          -> Spans are inline containers (Elements or text are present in same line)
+          -> Divs are block containers (Elements or text are present in other block)
+          -> <span></span>   : Span tag
+          -> <div></div>   : Div tag
+          
+Input tags:
+          -> Input tags are basically going to allow us to add elements on your page, where users can input information
+          -> <input type="text" value="Default value or text automatically included text box" />   : Input tag
+          -> <input type="password"> : Hides the input text
+          -> <textarea rows="" cols=""></textarea> :  Text area tag
+          -> <input type="date" />  : Date as input
+          -> <input type="email" /> : email as input
+          -> <input type="range" /> : Range of number os input
+          -> <input type="file" />  : Files can be added as input
+          -> <input type="checkbox" /> : Checkbox as input
+          -> <input name="btn" type="radio" /> : Select only one at a time
+          -> <form></form> : Form is basically an element that is going to be used to store all of these input.
+          
+Iframes:
+      -> It is a HTML element that's actually able to display another website inside of your web page
+      -> <iframe>src:"..."</iframe> : Iframe tag        
