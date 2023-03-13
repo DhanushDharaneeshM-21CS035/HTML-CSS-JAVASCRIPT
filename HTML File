@@ -152,3 +152,6 @@ Input tags:
 Iframes:
       -> It is a HTML element that's actually able to display another website inside of your web page
       -> <iframe>src:"..."</iframe> : Iframe tag        
+
+Meta tag:
+          -> <meta name="viewport" content="width=device-width,initial-scale=1.0">
