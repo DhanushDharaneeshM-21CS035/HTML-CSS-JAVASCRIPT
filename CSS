@@ -1,2 +1,12 @@
 CSS (Cascading Style Sheets):
         -> CSS is something which is used to style websites or style HTML.
+
+Inline Styles:
+        -> Inline styles are where we style something right on the element that we want to effect.
+
+-> <style></style> : Style block
+Styling classes :
+                -> Classes are reusable styles that can be added to HTML elements
+                ->  So to show that you're styling  a class, you would put a dot in front of it.
+                
+-> <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> :  a free library of web fonts that you can use is google fonts, they have a lot of great fonts.
