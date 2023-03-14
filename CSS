@@ -114,3 +114,69 @@ Add Rounded Corners with border-radius:
                                 }
                           </style>
                           <a href="#"><img class="smaller-image thick-green-broder"></a>
+
+Give a Background Colour to a div Element:
+                -> The element background color can be set, with a property called background color.
+                -> Eg: -> <style>
+                            p{     
+                              font-family: Lobster,monospace;
+                              background-color: blue;
+                            }
+                          </style>
+                       -> <style>
+                                .silver-background{
+                                        background-color: silver;
+                                }
+                          </style>
+                          <div class="silver-background">
+
+Set the id of an Element:
+                -> We can also style based on ID and id is similar to a class except each element is only going to have one ID classes.
+                -> Eg: <form id="cat-photo-form" action="/submit-cat-photo">  : applying an ID to an element
+
+Use an id Attribute to style an Element:
+                -> Id have higher priority than classes.
+                -> And should only have one ID per element
+                -> Eg: -> <style>
+                                #heading{
+                                        colour: green;
+                                }
+                          </style> 
+                          <h2 class="red-text" id="heading">CatPhotoApp</h2>
+
+Adjust the Padding of an Element:
+                -> There are three properties that control the space around each element, which is padding margin and border.
+                -> Padding: The padding is the space around the text.
+                -> Margin: The margin is the space outside of the border that surrounds the padding
+                -> Padding is adjusted using padding keyword
+
+Adjust the Margin of an Element:
+         -> Elements merging controls the amount of space between an elements border and the surrounding elements    
+         -> Eg: margin: 20px;
+         
+Add a Negative Margin to an Element:
+         -> Setting negative value to margin keyword make the margin big because it has negative margin       
+         -> Eg: margin: -15px;
+
+Add Different Padding to Each Side of an Element:
+                -> we're going to use different paddings for the different sides using, top padding, right padding, bottom padding, left paadding.
+                -> Eg: Different padding:
+                         padding-top: 40px;
+                         padding-right: 20px;
+                         padding-bottom: 20px;
+                         padding-left: 40px;
+                      
+Add Different Margins to Each Side of an Element:
+                -> we're going to use different margin on each side, we have margin top, margin right, margin bottom, margin left. 
+                -> Eg: Different margin:
+                         margin-top: 40px;
+                         margin-right: 20px;
+                         margin-bottom: 20px;
+                         margin-left: 40px;
+                  
+Use Clockwise Notation to Specify the Padding:
+                -> Eg: padding: 20px 40px 20px 40px;   : These four numbers are which the first number is the top, then the right, then the bottom, then the left.
+                
+Use Clockwise Notation to Specify the Padding:
+                -> Eg: margin: 20px 40px 20px 40px;    : There's four numbers. The first is the top, right, bottom, and then left.
+                
