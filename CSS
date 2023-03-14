@@ -6,7 +6,19 @@ Inline Styles:
 
 -> <style></style> : Style block
 Styling classes :
+                -> <h2 class="red-text"> ->creates class
+                -> .red-text{
+                      color:red;
+                   }
                 -> Classes are reusable styles that can be added to HTML elements
                 ->  So to show that you're styling  a class, you would put a dot in front of it.
                 
 -> <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> :  a free library of web fonts that you can use is google fonts, they have a lot of great fonts.
+<p style="color:any color we want;">   ->changes the colour of text of that para or header tag
+
+Style Tags:
+        <style>
+          p {color:red;}
+        </style>
+->This code changes the color of text present inside a paragraph tag
+
