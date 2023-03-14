@@ -3,22 +3,114 @@ CSS (Cascading Style Sheets):
 
 Inline Styles:
         -> Inline styles are where we style something right on the element that we want to effect.
+        -> <p style="color:any color we want;">   ->changes the colour of text of that paragraph
+        -> Eg: <p style="colour: blue;">some text</p>.
 
--> <style></style> : Style block
 Styling classes :
-                -> <h2 class="red-text"> ->creates class
-                -> .red-text{
+                -> <h2 class="red-text"> : using style class
+                -> <style>       : creating style class
+                    .red-text{
                       color:red;
-                   }
+                    }
+                   </style>
                 -> Classes are reusable styles that can be added to HTML elements
                 ->  So to show that you're styling  a class, you would put a dot in front of it.
-                
--> <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> :  a free library of web fonts that you can use is google fonts, they have a lot of great fonts.
-<p style="color:any color we want;">   ->changes the colour of text of that para or header tag
-
-Style Tags:
-        <style>
-          p {color:red;}
-        </style>
+             
+Selectors to Style elements:
+        -> <style></style> : Style block
+        -> <style>
+               p {color:red;}
+           </style>
 ->This code changes the color of text present inside a paragraph tag
 
+Style Multiple Element with a CSS class:
+                -> The same CSS styles on multiple HTML elements
+                -> <h2 class="red-text"> : using style class
+                -> <p class="red-text">   : another usage of style class
+                -> <style>       : creating style class
+                    .red-text{
+                      color:red;
+                    }
+                   </style>
+
+Change the Font Size of an Element:
+                Eg: -> <style>       : creating style class
+                         .red-text{
+                           color:red;
+                           font-size: 30px;   : Changes the font size
+                         }
+                       </style>
+                    -> <style>
+                        p{      : another example
+                          font-size:16px;
+                        }
+                       </style>
+                      
+Set the FOnt Family of an Element:
+                -> It can set which font in element should use by  using the font family property.
+                -> Eg: -> <style>
+                            p{      
+                              font-size:16px;
+                              font-family: monospace;
+                            }
+                          </style>
+
+Import a Google Font:
+        -> We can import fonts from different websites, a free library of web fonts that we can use is Google fonts , they have a lot of great fonts.
+        -> <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> : This code comes directly from the Google Fonts website.
+        
+Specify How fonts should degrade:
+                -> This are the some default fonts available in all browsers, like monospace, serif and sans serif.
+                -> when one font isn't available, we can tell the browser to degrade or default to another font.
+                -> Eg: -> <style>
+                            p{      
+                              font-size:16px;
+                              font-family: Lobster,monospace;   : degrade or default to another font when if one is not available , it will go to the next font.
+                            }
+                          </style>
+                        
+Size your Images:
+        -> Css has a property called width that controls an element width.This can apply to almost any type of element, like an image or a div, or paragraph.
+        -> Eg: -> <style>
+                    .large-image{
+                       width: 500px;      : increases the size of the iamge 
+                    }
+                  </style>
+                  <a href="#"><img class="large-image"></a>
+               -> <style>
+                    .large-image{
+                       width: 100px;      : decreases the size of the iamge 
+                    }
+                  </style>
+                  <a href="#"><img class="smaller-image"></a>
+
+Add Borders around your Elements:
+              -> Css borders have properties like style, color and width.
+              -> Eg: -> h2{
+                          font-family: Lobster,monospace;
+                          border-color: red;
+                          border-width: 5px;
+                          boder-style: solid;
+                        }
+                     -> <style>    : creating class
+                                .thick-green-border{
+                                        border-color: green;
+                                        border-width: 10px;
+                                        boder-style: solid;
+                                }
+                        </style>
+                        <a href="#"><img class="smaller-image thick-green-broder"></a>
+
+Add Rounded Corners with border-radius:
+                -> Border radius property can used to make that a little rounded corners in borders
+                -> Eg: -> <style>    : creating class
+                                .thick-green-border{
+                                        border-color: green;
+                                        border-width: 10px;
+                                        boder-style: solid;
+                                        border-radius: 10px;   little curved corners
+                                        (or)
+                                        border-radius: 50%;   : makes a circle
+                                }
+                          </style>
+                          <a href="#"><img class="smaller-image thick-green-broder"></a>
