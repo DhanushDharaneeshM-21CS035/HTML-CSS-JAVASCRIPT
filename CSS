@@ -1,6 +1,8 @@
 CSS (Cascading Style Sheets):
         -> CSS is something which is used to style websites or style HTML.
-
+        -> Cascading means anything that you apply to an upper element goes down to any lower elements or any elements that are inside other elements.
+        -> So anything that you apply to the body element will cascade or get be inherited to all the  other elements on the page.
+        
 Inline Styles:
         -> Inline styles are where we style something right on the element that we want to effect.
         -> <p style="color:any color we want;">   ->changes the colour of text of that paragraph
@@ -177,6 +179,140 @@ Add Different Margins to Each Side of an Element:
 Use Clockwise Notation to Specify the Padding:
                 -> Eg: padding: 20px 40px 20px 40px;   : These four numbers are which the first number is the top, then the right, then the bottom, then the left.
                 
-Use Clockwise Notation to Specify the Padding:
+Use Clockwise Notation to Specify the Margin of an Element:
                 -> Eg: margin: 20px 40px 20px 40px;    : There's four numbers. The first is the top, right, bottom, and then left.
+                
+Use Attribute Selectors to Style Element:
+                -> Eg: -> [type='radio']{    : Here attribute is type and value is radio
+                                margin: 20px;
+                          }
+                       -> [type='checkbox']{
+                                margin: 10px 0px 15px 0px;
+                          }
+                
+Understand Absolute versus Relative Units:
+                -> Like px or pixels, these are absolute types of  length.
+                -> Absolute types of length like include, in  - inches, mm - millimeters, px - pixel, these are all tied to physical units of length.
+                -> Relative units of length like em and rem. And these are relative to another link value.
+                -> em - Relative to the font-size of the element.
+                -> rem - Relative to font-size of the root element.
+                -> Eg: .red-box{
+                             padding: 1.5em;
+                       }
+                
+Style the HTML Body Elements:
+                -> Every HTML page has a body element.
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                           }
+                       </style>
+                -> This turns the whole page black.
+                
+ Inherit Styles from the Body Element:
+                -> So anything that you apply to the body element will cascade or get be inherited to all the  other elements on the page
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                                colour: green;
+                                font-family: monospace;
+                           }
+                       </style>
+                       <h1>Hello World</h1>
+                       -> we have green monospace font applied to h1 tag.
+                
+Prioritize One Style Over Anothe:
+                ->  The way style works is it uses whichever one is more specific or mentioned.
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                                colour: green;
+                                font-family: monospace;
+                           }
+                           .pink-text{
+                                colour: pink;
+                           }
+                       </style>
+                       <h1 class="pink-text">Hello World</h1>
+                       -> We have pink monospace font applied to h1 tag.
+                
+Override Styles in Subsequent CSS:
+                -> The order that does matter is the order that the styles declared in.
+                -> Eg: <style>
+                           body{
+                                background-colour: black;
+                                colour: green;
+                                font-family: monospace;
+                           }
+                           .pink-text{
+                                colour: pink;
+                           }
+                           .blue-text{
+                                colour: blue;
+                           }
+                       </style>
+                       <h1 class="pink-text blue-text">Hello World</h1>
+                       -> We have blue monospace font applied to h1 tag due to the order on which the styles are declared in.
+                
+Override Class Declarations by Styling ID Attributes:
+                      -> IDs are even more specific.
+                      -> Eg: <style>
+                                body{
+                                    background-colour: black;
+                                    colour: green;
+                                    font-family: monospace;
+                                }
+                                #orange-text{
+                                        colour: orange;
+                                }
+                                .pink-text{
+                                        colour: pink;
+                                }
+                                .blue-text{
+                                        colour: blue;
+                                }
+                              </style>
+                              <h1 id="orange-text" class="pink-text blue-text">Hello World</h1>
+                              -> We have orange monospace font applied to h1 tag, Because IDs are specific.
+                
+Override Class Declarations with Inline Styles:
+                        -> Inline styles are going to be more specific than all these other ways of styling text.
+                        -> Eg: <style>
+                                body{
+                                        background-colour: black;
+                                        colour: green;
+                                        font-family: monospace;
+                                }
+                                #orange-text{
+                                        colour: orange;
+                                }
+                                .pink-text{
+                                        colour: pink;
+                                }
+                                .blue-text{
+                                        colour: blue;
+                                }
+                               </style>
+                               <h1 id="orange-text" class="pink-text blue-text" style="colour: white">Hello World</h1>                
+                               -> We have white monospace font applied to h1 tag because inline style are more specific.
+                               
+Override All Other Styles by using Important:
+                   -> Eg: <style>
+                                body{
+                                        background-colour: black;
+                                        colour: green;
+                                        font-family: monospace;
+                                }
+                                #orange-text{
+                                        colour: orange;
+                                }
+                                .pink-text{
+                                        colour: pink !important;  : specifing it is the most important style.
+                                }
+                                .blue-text{
+                                        colour: blue;
+                                }
+                               </style>
+                               <h1 id="orange-text" class="pink-text blue-text" style="colour: white">Hello World</h1>     
+                               -> We have pink monospace font applied to h1 tag due to specifing it as the most important.
                 
