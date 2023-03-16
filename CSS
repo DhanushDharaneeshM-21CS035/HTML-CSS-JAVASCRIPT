@@ -316,3 +316,72 @@ Override All Other Styles by using Important:
                                <h1 id="orange-text" class="pink-text blue-text" style="colour: white">Hello World</h1>     
                                -> We have pink monospace font applied to h1 tag due to specifing it as the most important.
                 
+Use Hex Code for Specific Colour:
+                -> Hex codes are six hexadecimal digits that represent colors.
+                -> The hexadecimal for black, which is just 000000. So the first two zeros are the red, nthe second two zeros are the green and the third, two zeros are blue.
+                -> Eg: <style>
+                          body{
+                                background-color: #000000;
+                          }
+                       </style>
+
+Use Hex code to Mix Colors:
+                -> Hex codes can be used to create over 16 million different colors.
+                -> Eg: <style>
+                          .red-text{
+                                color: #FF0000;
+                          }
+                          .green-text{
+                                color: #00FF00;
+                          }
+                          .dodger-blue-text{
+                                color: #1E90FF;
+                          }
+                          .orange-text{
+                                color: #FFA500;
+                          }
+                       </style>
+
+Use Abbreviated Hex Code:
+              -> Hex codes can be shortened.
+              -> Eg: <style>
+                          .red-text{
+                                color: #F00;
+                          }
+                          .fuchsia-text{
+                                color: #F0F;
+                          }
+                          .cyan-text{
+                                color: #0FF;
+                          }
+                          .green-text{
+                                color: #0F0;
+                          }
+                       </style>
+
+Use RGB values to Color Elements:
+                -> We can also represent colors using RGB values.
+                -> Eg: <style>
+                          body{
+                                background-color: rgb(255, 255, 255);  :  for white color
+                                background-color: rgb(0, 0, 0);  :  for black color
+                          }
+                       </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
