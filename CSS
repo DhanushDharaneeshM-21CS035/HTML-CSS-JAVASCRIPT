@@ -383,3 +383,12 @@ Use RGB to Mix Colors:
                                 color: rgb(0, 0, 225);
                           }
                        </style>
+
+CSS Grid:
+     -> We can turn any HTML element into a grid container by setting its display property to grid.
+     -> Eg: -> display : grid;   : This will give us the ability to use the other  properties associated with CSS Grid
+            -> grid-template-columns: 100px 100px 100px;  : This add columns 
+            -> grid-template-rows: 50px 50px;   : This add rows 
+            -> grip-template-columns: auto 50px 10% 2fr 1fr;   : This are used to change the size of columns and rows
+            -> fr  : This sets the column or row to a fraction of the available space and it changes as the website size changes and get addjusted.
+            -> auto : That sets the column to the size of the space
