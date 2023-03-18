@@ -422,3 +422,58 @@ CSS Grid:
             -> grid-template-column: repeat(auto-fit, minmax(90px, 1fr));   : This creates flexible layouts using auto-fit   
             -> The auto fit, always make sure that they fit the entire length of the container.    
             
+Media Queries:
+        -> Media queries can be used along with template areas to make responsive layouts.
+        -> When we change the size, it will change how things are laid out on the screen with the header the advert the content
+        -> Default media query:
+           Eg: @media (min-width: 300px){
+                .container{
+                        grid-template-columns: auto 1fr;
+                        grid-template-rows: auto 1fr auto;
+                        grid-template-areas:
+                                "advert header"
+                                "advert content"
+                                "advert footer";
+                }
+               }
+                @media (min-width: 400px){
+                .container{
+                        grid-template-columns: auto 1fr;
+                        grid-template-rows: auto 1fr auto;
+                        grid-template-areas:
+                                "header header"
+                                "advert content"
+                                "footer footer";
+                }
+               }
+          (This changes the contents or alignment in website as the size of the website changes)
+          
+Create grids within grids:
+                -> Eg: display: grid;
+                       grid-template-columns: auto 1fr;
+                (This now takes up the whole space here. And there's a grid within the grid.)
+
+Flex box:
+Use display: flex to Position Two Boxes:
+             -> Flexbox is used to position CSS elements in a flexible way.
+             -> Eg: #box-container{
+                         height: 500px;
+                         display: flex;
+                    }
+                    (This now sets the boxes right next to each other on the page)
+
+-> flex-direction: row-reverse;  : everything will be reversed in the container.
+-> flex-direction: column;   : when we set flex direction to column, it updates two columns.
+-> Row is the default setting for flex direction
+->flex-wrap: wrap;  : The flex wrap property, it tells CSS to wrap items, so just means the extra items moved to a new row or column. 
+->flex-shrink: 1;   : It allows an item to shrink if the flex container is too small             
+-> The flex shrink property applies to flex items instead of a flex  container.
+-> The flex shrink property controls the size of the items when the  container shrinks. 
+->flex-grow: 1;   :It allows an item to grow in the container;
+-> The flex grow property is basically the opposite  of the flex shrink property.
+-> The flex basis property specifies the  initial size of the item before CSS makes adjustments with flex shrink or flex grow.
+-> flex-basis: 10cm;   : This going to set a specific size with pixels, ends or percentages or auto.
+-> flex: 0 1 auto;    : The first number is the flex row number. The second number is the flex shrink number. And then we have the flex basis
+-> The flex property is a shortcut to set the flex grow flex shrink and flex basis properties all at once.
+-> order: 1;  : The order property can be used to rearrange items.  
+-> align-self: flex-end;   : The align self property will align each  item individually and this aligns it to the bottom of the row. 
