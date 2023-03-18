@@ -392,3 +392,33 @@ CSS Grid:
             -> grip-template-columns: auto 50px 10% 2fr 1fr;   : This are used to change the size of columns and rows
             -> fr  : This sets the column or row to a fraction of the available space and it changes as the website size changes and get addjusted.
             -> auto : That sets the column to the size of the space
+            -> grid-column-gap : 20px;  : This creates a column gap.
+            -> grid-row-gap : 20px;  : This creates a row gap
+            -> grid-gap: 10px 20px;   : Adds gaps between both column and row. The first number is going to be 10 pixels for the rows and the second numbers can be 20 pixels for the columns.
+            -> grid-column: 2 / 4;   : Using grid-column to control spacing
+            -> grid-row: 2 / 4;   : Using grid-row to control spacing.
+            -> In CSS Grid, each box is considered a cell.
+            -> We use justify self, we can justify and align the content within the cells.
+            -> By default, the property has a value of stretch, which will make the content filled the whole width of the cell.
+            -> Justify-self: center;   : This align an item horizontally and sets it to center within the cell. we can also do start or end
+            -> align-self: end;   : This aligns vertically to the bottom of the cell.
+            -> justify-items: center;   : This align all items horizontally and everything has been set to center.
+            -> align-items: end;   : This align all items vertically and everything has been set to end of each cell.
+            -> grid-template-area:       : This divides the grid into an area template.
+                "header header header"
+                "advert content content"
+                "footer footer footer" ;
+            -> grid-area: header;   : This helps to places the items in grid areas.
+               (This fills up the entire header or the space where it is present in the grid)
+            -> grid-area: 1/1/2/4;   : This helps to use grid-area without creating an area template and in this the grid takes the top row fully.
+               (it's almost like setting coordinates on a graph. The first two numbers are the start coordinate  And the last two numbers are the end coordinate)
+            -> grid-template-column: repeat(3, 1fr);   :This reduces repetition using repeat function 
+            -> Min max function takes two arguments.   
+            -> We can also set the size of a row or column using the min max function   
+            -> grid-template-column: repeat(3, minmax(90px, 1fr));   :This limits item size using the min-max function  
+            -> The first number is the smallest size that the row or column can be. And then the second number is the largest size a row or column can be.   
+            -> grid-template-column: repeat(auto-fill, minmax(90px, 1fr));   : This creates flexible layouts using auto-fill  
+            -> We use autofill, to automatically insert as many rows or columns of our desired size as possible, depending on the size of the container.   
+            -> grid-template-column: repeat(auto-fit, minmax(90px, 1fr));   : This creates flexible layouts using auto-fit   
+            -> The auto fit, always make sure that they fit the entire length of the container.    
+            
