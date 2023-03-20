@@ -1,1 +1,51 @@
+Comment in Javascript Code:
+            -> Comments are lines of code that Javascript will intentionally ignore.
+            -> They’re just used to create notes for yourself and others about what the code does
+            -> // : makes an in-line comment
+            -> Eg : // in-line comment example   : This is inline comment
+            -> Eg : /* this is a multiline
+                       comment line 1     : This multi-line comment
+                       line 2
+                       line 3 */
+            -> We can have multiple lines in multiline comment.
 
+Data types and variables:
+            -> Data is anything that is meaningful to the computer.
+            -> Javascript provides seven different data types
+            -> Data Types:
+                     Undefined, Null, Boolean, String, Symbol, Number, and Object.
+            Undefined:
+                  -> It is something that hasn’t been defined.
+                  -> It may have a variable that haven’t set to be anything yet
+            Null:
+                -> Null means nothing.
+            Boolean:
+                -> A boolean means true or false
+            Symbol:
+                -> A symbol is an immutable primitive value that is unique.
+            String:
+                -> A string is just any sort of text
+            Number:
+                -> A number is a number.
+            Object:
+                -> An object can store a lot of different key value pairs.
+            -> Varaibles:
+                    -> A variable allows computers to store and manipulate data in a dynamic fashion.
+                    -> It’s basically a label to point to the data.
+                    -> To declare a variable, one way is to use the var keyword.
+                    -> Var stands for variable
+                    -> Eg : var myname = "Javascript"   : this is string datatype
+                    -> There are actually three ways to declare a variable in Javascript.
+                              1) var myname = "Javascript"   : A var is going to be able to be used throughout your whole program.
+                              2) let ourname = "JS"   : Let will only be used within the scope of where you declared that.
+                              3) const pi = 3.14   : Const is a variable that should never change. It can never change.
+                    
+Storing Values with Assignment Operator:
+                    -> There’s a difference between declaring variables and assigning variables.
+                    -> Eg : var a;   : Here it is declaring a variable to be called a.
+                            var b = 2;   : Here it is declaring and assigning in one line.
+                    -> And then the equals sign is the assignment operator.        
+                    -> Eg : a = 7   : we've assigned a to be 7
+                            b = a   : now assigned the contents of a to b.
+
+-> console.log(content)  : It allows you to see the content in the console. 
