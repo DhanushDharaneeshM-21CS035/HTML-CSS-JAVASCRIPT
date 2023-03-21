@@ -49,3 +49,80 @@ Storing Values with Assignment Operator:
                             b = a   : now assigned the contents of a to b.
 
 -> console.log(content)  : It allows you to see the content in the console. 
+
+Initializing Variables w/ Assignment Operator:
+                        -> var a = 9;   : This ia an example of initializing value and declaring it same time.
+                        -> The var a is declaring it. And the a = 9 is initializing it with the assignment operator, which is the = sign.
+                        
+Uninitialized Variables:
+            -> Uninitialized that means their value is undefined.
+            -> Eg : var a;   : Uninitialized Variables
+
+Case Sensitivity in Variables:
+            -> Variable names and function names in Javascript are case sensitive.
+            
+-> + : Adding numbers 
+   Eg : var sum = 10 + 10;
+-> - : Subtracting Numbers
+   Eg : var sub = 50 - 10;
+-> * : Multiplying Numbers   
+   Eg : var mul = 50 * 10;
+-> / : Dividing Numbers             
+   Eg : var div = 50 / 10;             
+-> myVar++; : Incrementing Numbers             
+-> myVar--; : Decrementing Numbers
+-> var myDecimal = 0.009;  : Decimal Numbers or are sometimes referred to as floating point numbers or floats
+-> var product = 2.0 * 2.5; : Multiply Decimals
+-> var quotient = 0.0 / 2.0; : Divide Decimals
+-> var reminder = 11 % 3; : used to finding a Remainder
+-> a += 12; : Compound Assignment with Augmented Addition
+-> a -= 10; : Compound Assignment with Augmented Subtraction
+-> a *= 10; : Compound Assignment with Augmented Multiplication
+-> a /= 10; : Compound Assignment with Augmented Division
+
+Declare String Variables:
+            -> If we have some characters surrounded by quotation marks, they can either be single quotation marks, double quotation marks, or backticks then it’s a string.
+            -> These are called "String literals”.
+            -> Eg : var firstName = "Javascript";
+            
+Escaping Literal Quotes in Strings:
+                 -> \  : This is  escape character
+                 -> Eg : var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
+                    console.log(myStr);
+                    Output : I am a "double quoted" string inside "double quotes"
+                    
+Quoting String with Single Quotes:
+               -> Instead of having string start with double quotes, have can start it with a single quote.
+               -> A string can either be surrounded by ‘single quotes’ or “double quotes”
+               -> Eg : var myStr = '<a href="http://www.example.com" target="_blank">Link</a>'
+
+-> `...` : backticks  : -> This can be put at the beginning and the end of the string.
+                        -> Now with this we can actually use single quotes and double quotes both within the string.
+                        
+Escape Sequences in Strings:
+            -> \'  : single quote
+            -> \"  : double quote
+            -> \\  : backslash
+            -> \n  : newline
+            -> \r  : carriage return
+            -> \t  : tab
+            -> \b  : backspace
+            -> \f  : form feed
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+                
+                
