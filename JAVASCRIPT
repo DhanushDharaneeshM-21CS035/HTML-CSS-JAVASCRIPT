@@ -187,3 +187,42 @@ Accesses Array Data with Indexes:
                     var number = myarr[0];
                     console.log(number);
                     Output : 10
+
+Modify Array Data With Indexes:
+             -> We can use array indexes to modify arrays.
+             -> Eg : var myarr = [10,20,30];
+                     myarr[0] = 40;
+                     console.log(myarr);
+                     Output : [40, 20, 30]
+
+Access Multi-Dimensional Arrays With Indexes:
+                    -> We can also use bracket notation to select an element in a multi-dimensional or array of arrays. 
+                    -> Eg : var myarr = [[1,2,3],[4,5,6],[7,8,9]];
+                            var number = myarr[0][0]  : In this the first index refers to the outer array and the second index refers to the inner array or the nested array elements.
+                            console.log(number);
+                            Output : 1
+
+Manipulate Arrays with push():
+                 -> We can have pinned data to the end of an array with the push function.       
+                 -> The push function is used to push elements or another array in the end of the taken array
+                 -> Eg : var myarr = [["Java", 1],["CSS" ,2]];
+                         myarr.push(["Javascript", 3]);
+
+Manipulate Arrays with pop():
+            -> We can remove an item from an array with the pop() function.
+            -> pop() : it’s going to remove the last element in the array
+            -> Eg : var myarr = [["Java", 1],["CSS" ,2]];
+                    var remele = myarr.pop();
+                    console.log(remele);
+                    Output : ["CSS", 2]
+
+Manipulate Arrays with shift():
+            -> The shift function is very similar to the pop function except it removes the first element of the array instead of the final element.
+            -> Eg : var myarr = [["Java", 1],["CSS" ,2]];
+                    myarr.shift();   : After this the first element will be ["CSS", 2]
+                    
+Manipulate Arrays with unshift():
+                        -> The unshift() function is similar to the push() array function. While push() adds an element to the end of the array, unshift() adds at element to the beginning of the array.
+                        -> Eg : var myarr = [["Java", 1],["CSS" ,2]];
+                                myarr.unshift(["Javascript", 3]); : ["Javascript", 3] This will be add in beginning of the array and other elements will be shifted to next positon
+                                
