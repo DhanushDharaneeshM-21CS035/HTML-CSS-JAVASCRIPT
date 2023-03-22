@@ -108,3 +108,82 @@ Escape Sequences in Strings:
             -> \t  : tab
             -> \b  : backspace
             -> \f  : form feed
+
+Concatenating String with Plus Operator:
+                        -> We can concatenate strings with the + operator.
+                        -> Eg : var ourStr = "I come first. " + "I come second.";   
+                                console.log(ourStr);
+                                Output : I come first. I come second.
+Concatenating Strings with Plus Equals Operator:
+                      -> We can also concatenate strings using the += operator.
+                      -> -> Eg : var ourStr = "I come first. "; 
+                                 ourStr += "I come second.";   
+                                 console.log(ourStr);
+                                 Output : I come first. I come second.  
+
+Constructing String with Variables:
+                    -> We can concatenate strings together with variables.    
+                    -> Eg : var myName = "Beau";
+                            myStr = "My name is " + myName + " and I am well!";
+                            console.log(myStr);
+                            Output : My name is Beau and I am well!
+
+Appending Variables to Strings:
+                     -> We can append variables to strings with this += operator.
+                     -> Eg : var ourStr = "worthwhile";
+                             var myStr = "Learning to code is ";
+                             myStr += ourStr;
+                             console.log(myStr);
+                             Output : Learning to code is worthwhile
+
+Find Length of String:
+            -> We just use the .length property to find the length.
+            -> Eg : var nameLength = 0;
+                    var name = "Javascript";
+                    nameLength = name.length;
+                    console.log(nameLength);
+                    Output : 10
+
+Bracket Notation to Find First Character in String:
+                        -> Bracket notation is a way to get a character at a specific index within a string.
+                        -> The number 0, that refers to first index of the string. 
+                        -> Eg : var firstLetter = "";
+                                var lastName = "Java";
+                                firstLetter = lastName[0];
+                                console.log(lastName);
+                                Output : "J"
+
+String Immutability:
+            -> Strings are immutable, meaning they cannot be altered once created.
+            -> This does not mean that they cannot be changed, just that the individual characters of a string literal cannot be changed.
+            -> Eg : var mystr = "Jello World";
+                    mystr[0] = "H";  : This will show ERROR because of the immutability of strings.
+                    Corret way is:
+                    mystr = "Hello World";
+                    
+Bracket Notation to Find Last Character in String:
+                     -> We can also use bracket notation to find the last letter in a string
+                     -> Eg : var name = "Java";
+                             var lastletter = name[name.length - 1];
+                             console.log(lastletter);
+                             Output : "a"
+                     
+Arrays:
+       -> Arrays allow you to store several pieces of data in one place.
+       -> We can store Multiple Values in array
+       -> Arrays always start with a bracket and then end with a bracket to show the beginning and ending of the array.
+       -> Every element in the array is separated by a comma.
+       -> The elements in an array can be any of data type.
+       -> Eg : var myarray = ["Java", 1];
+                      
+Nested Arrays:
+          -> When one of the elements in an array is another array, that’s called a nested array or a multidimensional array 
+          -> Eg : var myarray = [["Java",1],["Css",2]];
+          
+Accesses Array Data with Indexes:
+            -> Array elements can be accessed using their index.
+            -> Array index starts with 0 always and have n-1 indexes.
+            -> Eg : var myarr = [10,20,30];
+                    var number = myarr[0];
+                    console.log(number);
+                    Output : 10
