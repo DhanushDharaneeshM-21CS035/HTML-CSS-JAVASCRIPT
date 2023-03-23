@@ -227,5 +227,120 @@ Manipulate Arrays with unshift():
                                 myarr.unshift(["Javascript", 3]); : ["Javascript", 3] This will be add in beginning of the array and other elements will be shifted to next positon
                                 
                                 
-                                
-                                
+Functions:
+       -> Functions allow us to create reusable code in Javascript.
+       -> There’s always parenthesis and we can pass information into the parenthesis.
+       -> And everything inside the curly bracket is run anytime the function is called or invoked.
+       -> The function is being called by just putting the function name with parenthesis after the name.
+       -> Eg : function reusableFunction(){       : This a function with reuableFunction as function name
+                        console.log("Hi World");
+               }
+               reusableFunction();   : This is the function call statement.
+               
+Passing Values to Functions with Arguments:
+                        -> Parameters are variables that act as place holders for the values that are to be input to a function when it is called.
+                        -> Eg : function reusableFunction(a ,b){   
+                                    console.log(a-b);
+                                }
+                                reusableFunction(10, 5);   : Here the function is  passing the values 
+
+Global Scope and Functions:
+            -> Scope refers to the visibility of variables.
+            -> Variables which are defined outside of a function block have global scope.
+            -> Global scope means they can be seen everywhere in your Javascript code
+            
+Local Scope and Functions:
+            -> Variables which are declared within a function as well as the function parameters have local scope.
+            -> Eg :  function myLocalScope(){
+                        var myVar= 5;
+                        console.log(myVar);  : No error Output:  //5
+                     }
+                     myLocalScope();
+                     console.log(myVar);  : there’s an error because it tried to access myVar outside of the function.
+  
+Global vs Local Scope in Functions:
+            -> It is possible to have both local and global variables with the same name. When we do this, the local variable takes precedent over the global variable.
+            
+Boolean Values:
+            -> Booleans are another datatype in Javascript.
+            -> There are only two values, true or false
+
+If Statements:
+         -> An if statement is used to make decisions in code   
+         -> The keyword If tells Javascript to execute the code in the curly braces under certain conditions defined in the parenthesis.
+         -> There’s always parenthesis after the keyword if
+         -> If the stuff inside these parenthesis evaluates to true, then the code within these curly braces will be evaluated or run.
+         -> Eg : function trueOrFalse(wasTrue){
+                        if(wasTrue){
+                            return "Yes";
+                        }
+                        return "No";
+                 }
+                 consle.log(trueOrFalse(true));   : Output: Yes
+     
+Equality Operator]:
+           -> There are many comparison operators in Javascript that will return a Boolean of true or false the most common is the equality operator
+           -> Equality operator which is the double equal == sign
+           -> Eg : var val = 10;
+                   if(val == 10) return true;  : Output : true
+                   if(3 ==='3') : output : true 
+Strict Equality Operator:
+            -> The strict equality operator, the triple equal sign ===.
+            -> the double equals sign attempts to convert both values being compared to a common type while the strict equality operator does not do the type conversion
+            -> Eg : if(3 === 3)  : Output : true
+                    if(3 ==='3') : output : false
+                    
+Inequality Operator:
+            -> Inequality operator which is basically the opposite of the equality operator.
+            -> != : Inequality operator
+            -> Eg : var val = 10;
+                    if(val != 1) return true;  : Output : true
+
+Strict Inequality Operator:
+            -> The strict inequality operator is basically the opposite of the strict equality operator.
+          
+Logical Operator:
+           -> >   : greater than operator
+           -> >=  : greater than or equal to operator
+           -> <   : Less than Operator
+           -> <=  : Less Than Or Equal To Operator
+           -> &&  : Logical And Operator
+           -> ||  : Logical Or Operator
+           
+Else Statements:
+            -> When an if statement is true, normally the block of code right after the if statement will be evaluated and if it’s not true, nothing happens. But with an else statement, an alternate block of code can be executed when it’s not true.
+            -> Eg : if(val >5){
+                        console.log("Bigger than 5");
+                    }else{
+                        console.log("5 or Smaller");
+                    }
+
+Else If Statements:
+            -> If you have multiple conditions that need to be addressed, you can use else if statements.
+            -> Eg : if(val >10){
+                        console.log("Greater than 10");
+                    }if(val < 5){
+                        console.log("Smaller than 5");
+                    else{
+                        console.log("Between 5 and 10");
+                    }
+
+Switch Statements:
+            -> A switch statement tests a value and can have many case statements which define various possible values.
+            -> Switch is a keyword
+            -> Default Option in Switch Statements : This is like the else statement.
+            -> Eg : switch(val){            : This is an example of a switch case
+                        case "a":
+                             answer = "apple";
+                             break;
+                        case "b":
+                             answer = "bird";
+                             break;
+                        case "c":
+                             answer = "cat";
+                             break;
+                        default:             : This is an default case
+                             answer = "stuff";
+                             break;  
+                     }return answer;    
+          
