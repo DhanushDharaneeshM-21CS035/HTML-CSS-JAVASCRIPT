@@ -343,4 +343,30 @@ Switch Statements:
                              answer = "stuff";
                              break;  
                      }return answer;    
-          
+
+Build Javascript Objects:
+                 -> Objects are similar to arrays except that instead of using indexes to access data, you use properties.
+                 -> Eg : var ourDog ={
+                             "name" : "Camper",
+                             "legs" : 4,
+                             "tails" : 1,
+                             "friends": ["everything!"]
+                         };
+                        
+Accessing Object Properties with Dot Notation:
+                        -> There are two main ways to access a property on an object.
+                        -> 1)Eg : var testObj = {           
+                                     "hat": "ballcap",
+                                     "shirt": "jersey",
+                                     "shoes": "cleats"
+                                  };
+                                  var hatValue = testObj.hat;
+                                  var shirtValue = testObj.shirt;
+                            2)Eg : var testObj = {           
+                                     "hat": "ballcap",
+                                     "shirt": "jersey",
+                                     "shoes": "cleats"
+                                   };
+                                   var hatValue = testObj["hat"];
+                                   var shirtValue = testObj["shirt"];
+                        
