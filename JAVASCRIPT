@@ -367,6 +367,82 @@ Accessing Object Properties with Dot Notation:
                                      "shirt": "jersey",
                                      "shoes": "cleats"
                                    };
-                                   var hatValue = testObj["hat"];
+                                   var hatValue = testObj["hat"];   : Accessing object properties with Bracket Notation 
                                    var shirtValue = testObj["shirt"];
-                        
+                            3)Eg : var testObj = {           
+                                     12: "ballcap",
+                                     16: "jersey",
+                                     19: "cleats"
+                                   };
+                                   var Jerseypf = 16;   : Accessing object properties with Bracket Notation 
+                                   var Pfjersey = testObj[Jerseypf];
+                                   
+Updating object Properties:
+            -> We can use dot notation to update object properties.
+            ->Eg: var ourDog = {
+                    "name": "Camper",
+                    "legs": 4,
+                    "tails": 1,
+                    "friends": ["freeCodeCamp Campers"]
+                };
+                ourDog.name = "Happy Camper";
+                                   
+Add New Properties to an Object:
+            -> We can add new properties to an object using dot notation or bracket notation.
+            ->Eg: 1) var ourDog = {
+                      "name": "Camper",
+                      "legs": 4,
+                      "tails": 1,
+                      "friends": ["freeCodeCamp Campers"]
+                     };
+                     ourDog.bark = "bow-wow";
+                 2) var myDog = {
+                      "name": "Camper",
+                      "legs": 4,
+                      "tails": 1,
+                      "friends": ["freeCodeCamp Campers"]
+                     };
+                     myDog['bark'] = "bow-wow";
+                     
+Delete Properties From an Object:
+            -> It’s simple to delete a property from an object.
+            ->Eg: var ourDog = {
+                    "name": "Camper",
+                    "legs": 4,
+                    "tails": 1,
+                    "friends": ["freeCodeCamp Campers"]
+                    "bark" = "bow-wow"
+                   };
+                   delete ourDog.bark;
+             //(now this property here, the bark, has been deleted and is no longer in the object after we’ve deleted it.)              
+             
+Testing Objects for Properties:
+            -> We can check if an object has a property with the hasown property method.
+            ->Eg : syntax : object_name.hasOwnProperty(value_to_be_checked)
+             
+Accessing Nested Objects:
+            -> we have an object with other objects nested inside that. So, in order to access sub-properties of an object we can chain together the dot or bracket notation.
+            ->Eg : Syntax :  1st_object_name.2nd_object_name.[value]
+            
+Iterate with While Loops:
+            -> Loops allow you to run the same code multiple times
+            -> A while loop that runs while a specified condition is true and stops once it’s no longer true
+            -> Eg : var arr=[];
+                    var i=0;
+                    while(i<5){
+                        arr.push(i);
+                        i++;
+                    }
+                                   
+Iterate with For Loops:
+            -> A for loop is the most common type of loop in Javascript.
+            -> We start with the keyword for. And then we have these parentheses with three different items and they’re separated by semicolons.
+            -> The first thing is the initialization. Then we have the condition. Then we have the final expression. So, the initialization happens before any of the code inside the loop runs.
+            -> Eg: Syntax : for(var i=0;i<5;i++){
+                                    statements;
+                            }
+                
+Iterate Through an Array with a For Loop:
+            -> It is common in Javascript to iterate through the contents of an array.
+            -> Eg: for(var i = 0; i < array_name.length; i++){
+                   }
