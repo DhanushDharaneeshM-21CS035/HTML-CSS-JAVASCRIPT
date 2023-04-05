@@ -446,3 +446,33 @@ Iterate Through an Array with a For Loop:
             -> It is common in Javascript to iterate through the contents of an array.
             -> Eg: for(var i = 0; i < array_name.length; i++){
                    }
+
+Do while loop:
+            -> A do while loop will always run at least one time and then it will check the condition.
+            -> Eg: Syntax : do{
+                               Statements;
+                            }while(condition);
+                     
+Generate Random Fractions:
+            -> There is a simple way to create a random decimal number in Javascript.
+            -> It’s with the math.random function
+            -> It’s always going to be a number between 0 and it could be 0. Between 0 and 1, but it could not be 1.
+           
+Generate Random Whole Numbers:
+            -> This is going to create a random whole number between 0 and 19.
+            -> Math.floor(Math.random() * 10)  : This creates random number between 0 to 9
+            
+Use the parseInt Function:
+            -> Another useful function is the parseInt function. It takes a string and returns an integer.
+            -> If the string cannot be converted into an integer it returns in NaN for Not a Number.
+            -> Eg: Syntax : parseInt("56")  : This converts string into integer.
+            
+Use the parseInt Function with a Radix:
+                        -> The parseInt function can also be used with a radix. The radix specifies the base of the number in the string.Such as base 2 or base 7 or base 8.
+                        -> Eg: Syntax : parseInt("10011", 2)  : this is a binary number.
+                        
+Use the Conditional (Ternary) Operator:
+                        -> Eg: Syntax : condition ? statement-if-true : statement-if-false;
+                        -> Eg: return a===b ? true : false;
+                        
+-> If you declare a variable with the const keyword you cannot reassign it afterwards.
