@@ -5,6 +5,7 @@ Comment in Javascript Code:
             -> Eg : // in-line comment example   : This is inline comment
             -> Eg : /* this is a multiline
                        comment line 1     : This multi-line comment
+                       
                        line 2
                        line 3 */
             -> We can have multiple lines in multiline comment.
